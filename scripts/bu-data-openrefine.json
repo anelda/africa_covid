@@ -1,0 +1,542 @@
+[
+    {
+      "op": "core/column-rename",
+      "oldColumnName": "Country",
+      "newColumnName": "country",
+      "description": "Rename column Country to country"
+    },
+    {
+      "op": "core/column-rename",
+      "oldColumnName": "Case No (per country)",
+      "newColumnName": "country_case_number",
+      "description": "Rename column Case No (per country) to country_case_number"
+    },
+    {
+      "op": "core/column-rename",
+      "oldColumnName": "Sex",
+      "newColumnName": "sex",
+      "description": "Rename column Sex to sex"
+    },
+    {
+      "op": "core/column-rename",
+      "oldColumnName": "Age",
+      "newColumnName": "age",
+      "description": "Rename column Age to age"
+    },
+    {
+      "op": "core/column-rename",
+      "oldColumnName": "Travel History",
+      "newColumnName": "travel_history",
+      "description": "Rename column Travel History to travel_history"
+    },
+    {
+      "op": "core/column-rename",
+      "oldColumnName": "Arrival in Country",
+      "newColumnName": "arrival_in_country",
+      "description": "Rename column Arrival in Country to arrival_in_country"
+    },
+    {
+      "op": "core/column-rename",
+      "oldColumnName": "Date Reported/Confirmed",
+      "newColumnName": "date_reported_or_confirmed",
+      "description": "Rename column Date Reported/Confirmed to date_reported_or_confirmed"
+    },
+    {
+      "op": "core/column-rename",
+      "oldColumnName": "Notes & Symptoms",
+      "newColumnName": "notes_symptoms",
+      "description": "Rename column Notes & Symptoms to notes_symptoms"
+    },
+    {
+      "op": "core/column-rename",
+      "oldColumnName": "Where isolated/identified",
+      "newColumnName": "where_isolated_identified",
+      "description": "Rename column Where isolated/identified to where_isolated_identified"
+    },
+    {
+      "op": "core/column-rename",
+      "oldColumnName": "Importation (Y/N)",
+      "newColumnName": "importation",
+      "description": "Rename column Importation (Y/N) to importation"
+    },
+    {
+      "op": "core/column-rename",
+      "oldColumnName": "If not importation, contact or community transmission",
+      "newColumnName": "transmission_type",
+      "description": "Rename column If not importation, contact or community transmission to transmission_type"
+    },
+    {
+      "op": "core/column-rename",
+      "oldColumnName": "Symptom onset/detection",
+      "newColumnName": "symptom_onset_detection",
+      "description": "Rename column Symptom onset/detection to symptom_onset_detection"
+    },
+    {
+      "op": "core/column-rename",
+      "oldColumnName": "Outcome",
+      "newColumnName": "outcome",
+      "description": "Rename column Outcome to outcome"
+    },
+    {
+      "op": "core/column-rename",
+      "oldColumnName": "Detected through active monitoring or self presentation?",
+      "newColumnName": "detected_through",
+      "description": "Rename column Detected through active monitoring or self presentation? to detected_through"
+    },
+    {
+      "op": "core/column-rename",
+      "oldColumnName": "References",
+      "newColumnName": "references",
+      "description": "Rename column References to references"
+    },
+    {
+      "op": "core/column-removal",
+      "columnName": "Column",
+      "description": "Remove column Column"
+    },
+    {
+      "op": "core/column-rename",
+      "oldColumnName": "country_case_number",
+      "newColumnName": "case_id",
+      "description": "Rename column country_case_number to case_id"
+    },
+    {
+      "op": "core/column-rename",
+      "oldColumnName": "date_reported_or_confirmed",
+      "newColumnName": "date",
+      "description": "Rename column date_reported_or_confirmed to date"
+    },
+    {
+      "op": "core/column-rename",
+      "oldColumnName": "outcome",
+      "newColumnName": "current_status",
+      "description": "Rename column outcome to current_status"
+    },
+    {
+      "op": "core/column-rename",
+      "oldColumnName": "travel_history",
+      "newColumnName": "travel_history_location",
+      "description": "Rename column travel_history to travel_history_location"
+    },
+    {
+      "op": "core/column-rename",
+      "oldColumnName": "symptom_onset_detection",
+      "newColumnName": "date_onset_symptoms",
+      "description": "Rename column symptom_onset_detection to date_onset_symptoms"
+    },
+    {
+      "op": "core/column-rename",
+      "oldColumnName": "where_isolated_identified",
+      "newColumnName": "city",
+      "description": "Rename column where_isolated_identified to city"
+    },
+    {
+      "op": "core/column-rename",
+      "oldColumnName": "sex",
+      "newColumnName": "gender",
+      "description": "Rename column sex to gender"
+    },
+    {
+      "op": "core/column-rename",
+      "oldColumnName": "arrival_in_country",
+      "newColumnName": "travel_history_dates",
+      "description": "Rename column arrival_in_country to travel_history_dates"
+    },
+    {
+      "op": "core/column-rename",
+      "oldColumnName": "notes_symptoms",
+      "newColumnName": "notes_for_discussion",
+      "description": "Rename column notes_symptoms to notes_for_discussion"
+    },
+    {
+      "op": "core/column-rename",
+      "oldColumnName": "references",
+      "newColumnName": "source",
+      "description": "Rename column references to source"
+    },
+    {
+      "op": "core/mass-edit",
+      "engineConfig": {
+        "facets": [],
+        "mode": "row-based"
+      },
+      "columnName": "gender",
+      "expression": "value",
+      "edits": [
+        {
+          "from": [
+            "F"
+          ],
+          "fromBlank": false,
+          "fromError": false,
+          "to": "female"
+        }
+      ],
+      "description": "Mass edit cells in column gender"
+    },
+    {
+      "op": "core/mass-edit",
+      "engineConfig": {
+        "facets": [],
+        "mode": "row-based"
+      },
+      "columnName": "gender",
+      "expression": "value",
+      "edits": [
+        {
+          "from": [
+            "M"
+          ],
+          "fromBlank": false,
+          "fromError": false,
+          "to": "male"
+        }
+      ],
+      "description": "Mass edit cells in column gender"
+    },
+    {
+      "op": "core/mass-edit",
+      "engineConfig": {
+        "facets": [],
+        "mode": "row-based"
+      },
+      "columnName": "gender",
+      "expression": "value",
+      "edits": [
+        {
+          "from": [
+            "Male"
+          ],
+          "fromBlank": false,
+          "fromError": false,
+          "to": "male"
+        }
+      ],
+      "description": "Mass edit cells in column gender"
+    },
+    {
+      "op": "core/mass-edit",
+      "engineConfig": {
+        "facets": [],
+        "mode": "row-based"
+      },
+      "columnName": "gender",
+      "expression": "value",
+      "edits": [
+        {
+          "from": [],
+          "fromBlank": true,
+          "fromError": false,
+          "to": "(blank)"
+        }
+      ],
+      "description": "Mass edit cells in column gender"
+    },
+    {
+      "op": "core/mass-edit",
+      "engineConfig": {
+        "facets": [],
+        "mode": "row-based"
+      },
+      "columnName": "country",
+      "expression": "value",
+      "edits": [
+        {
+          "from": [
+            "CÙte d'Ivoire"
+          ],
+          "fromBlank": false,
+          "fromError": false,
+          "to": "Cote d'Ivoire"
+        }
+      ],
+      "description": "Mass edit cells in column country"
+    },
+    {
+      "op": "core/mass-edit",
+      "engineConfig": {
+        "facets": [],
+        "mode": "row-based"
+      },
+      "columnName": "gender",
+      "expression": "value",
+      "edits": [
+        {
+          "from": [
+            "(blank)"
+          ],
+          "fromBlank": false,
+          "fromError": false,
+          "to": ""
+        }
+      ],
+      "description": "Mass edit cells in column gender"
+    },
+    {
+      "op": "core/column-rename",
+      "oldColumnName": "date",
+      "newColumnName": "date_confirmation",
+      "description": "Rename column date to date_confirmation"
+    },
+    {
+      "op": "core/column-rename",
+      "oldColumnName": "notes_for_discussion",
+      "newColumnName": "notes_symptoms",
+      "description": "Rename column notes_for_discussion to notes_symptoms"
+    },
+    {
+      "op": "core/column-addition",
+      "engineConfig": {
+        "facets": [],
+        "mode": "row-based"
+      },
+      "baseColumnName": "notes_symptoms",
+      "expression": "grel:cells.notes_symptoms.value + \"; importation=\" + cells.importation.value + \"; transmission_type=\" + cells.transmission_type.value + \"; detected_through=\" + cells.detected_through.value",
+      "onError": "set-to-blank",
+      "newColumnName": "notes_for_discussion",
+      "columnInsertIndex": 8,
+      "description": "Create column notes_for_discussion at index 8 based on column notes_symptoms using expression grel:cells.notes_symptoms.value + \"; importation=\" + cells.importation.value + \"; transmission_type=\" + cells.transmission_type.value + \"; detected_through=\" + cells.detected_through.value"
+    },
+    {
+      "op": "core/column-removal",
+      "columnName": "notes_symptoms",
+      "description": "Remove column notes_symptoms"
+    },
+    {
+      "op": "core/column-removal",
+      "columnName": "importation",
+      "description": "Remove column importation"
+    },
+    {
+      "op": "core/column-removal",
+      "columnName": "transmission_type",
+      "description": "Remove column transmission_type"
+    },
+    {
+      "op": "core/column-removal",
+      "columnName": "detected_through",
+      "description": "Remove column detected_through"
+    },
+    {
+      "op": "core/column-reorder",
+      "columnNames": [
+        "case_id",
+        "age",
+        "gender",
+        "city",
+        "country",
+        "current_status",
+        "source",
+        "date_onset_symptoms",
+        "date_confirmation",
+        "travel_history_dates",
+        "travel_history_location",
+        "notes_for_discussion"
+      ],
+      "description": "Reorder columns"
+    },
+    {
+      "op": "core/column-addition",
+      "engineConfig": {
+        "facets": [],
+        "mode": "row-based"
+      },
+      "baseColumnName": "case_id",
+      "expression": "grel:NA",
+      "onError": "set-to-blank",
+      "newColumnName": "origin_case_id",
+      "columnInsertIndex": 1,
+      "description": "Create column origin_case_id at index 1 based on column case_id using expression grel:NA"
+    },
+    {
+      "op": "core/column-addition",
+      "engineConfig": {
+        "facets": [],
+        "mode": "row-based"
+      },
+      "baseColumnName": "origin_case_id",
+      "expression": "grel:value",
+      "onError": "set-to-blank",
+      "newColumnName": "date",
+      "columnInsertIndex": 2,
+      "description": "Create column date at index 2 based on column origin_case_id using expression grel:value"
+    },
+    {
+      "op": "core/column-addition",
+      "engineConfig": {
+        "facets": [],
+        "mode": "row-based"
+      },
+      "baseColumnName": "date",
+      "expression": "grel:value",
+      "onError": "set-to-blank",
+      "newColumnName": "province/state",
+      "columnInsertIndex": 3,
+      "description": "Create column province/state at index 3 based on column date using expression grel:value"
+    },
+    {
+      "op": "core/column-reorder",
+      "columnNames": [
+        "case_id",
+        "origin_case_id",
+        "date",
+        "age",
+        "gender",
+        "city",
+        "province/state",
+        "country",
+        "current_status",
+        "source",
+        "date_onset_symptoms",
+        "date_confirmation",
+        "travel_history_dates",
+        "travel_history_location",
+        "notes_for_discussion"
+      ],
+      "description": "Reorder columns"
+    },
+    {
+      "op": "core/column-addition",
+      "engineConfig": {
+        "facets": [],
+        "mode": "row-based"
+      },
+      "baseColumnName": "province/state",
+      "expression": "grel:value",
+      "onError": "set-to-blank",
+      "newColumnName": "symptoms",
+      "columnInsertIndex": 7,
+      "description": "Create column symptoms at index 7 based on column province/state using expression grel:value"
+    },
+    {
+      "op": "core/column-reorder",
+      "columnNames": [
+        "case_id",
+        "origin_case_id",
+        "date",
+        "age",
+        "gender",
+        "city",
+        "province/state",
+        "country",
+        "current_status",
+        "source",
+        "symptoms",
+        "date_onset_symptoms",
+        "date_confirmation",
+        "travel_history_dates",
+        "travel_history_location",
+        "notes_for_discussion"
+      ],
+      "description": "Reorder columns"
+    },
+    {
+      "op": "core/column-addition",
+      "engineConfig": {
+        "facets": [],
+        "mode": "row-based"
+      },
+      "baseColumnName": "province/state",
+      "expression": "grel:value",
+      "onError": "set-to-blank",
+      "newColumnName": "date_admission_hospital",
+      "columnInsertIndex": 7,
+      "description": "Create column date_admission_hospital at index 7 based on column province/state using expression grel:value"
+    },
+    {
+      "op": "core/column-addition",
+      "engineConfig": {
+        "facets": [],
+        "mode": "row-based"
+      },
+      "baseColumnName": "date_admission_hospital",
+      "expression": "grel:value",
+      "onError": "set-to-blank",
+      "newColumnName": "underlying_conditions",
+      "columnInsertIndex": 8,
+      "description": "Create column underlying_conditions at index 8 based on column date_admission_hospital using expression grel:value"
+    },
+    {
+      "op": "core/column-addition",
+      "engineConfig": {
+        "facets": [],
+        "mode": "row-based"
+      },
+      "baseColumnName": "underlying_conditions",
+      "expression": "grel:value",
+      "onError": "set-to-blank",
+      "newColumnName": "death_date",
+      "columnInsertIndex": 9,
+      "description": "Create column death_date at index 9 based on column underlying_conditions using expression grel:value"
+    },
+    {
+      "op": "core/column-reorder",
+      "columnNames": [
+        "case_id",
+        "origin_case_id",
+        "date",
+        "age",
+        "gender",
+        "city",
+        "province/state",
+        "date_admission_hospital",
+        "country",
+        "current_status",
+        "source",
+        "symptoms",
+        "date_onset_symptoms",
+        "date_confirmation",
+        "underlying_conditions",
+        "travel_history_dates",
+        "travel_history_location",
+        "death_date",
+        "notes_for_discussion"
+      ],
+      "description": "Reorder columns"
+    },
+    {
+      "op": "core/column-reorder",
+      "columnNames": [
+        "case_id",
+        "origin_case_id",
+        "date",
+        "age",
+        "gender",
+        "city",
+        "province/state",
+        "country",
+        "current_status",
+        "source",
+        "symptoms",
+        "date_onset_symptoms",
+        "date_admission_hospital",
+        "date_confirmation",
+        "underlying_conditions",
+        "travel_history_dates",
+        "travel_history_location",
+        "death_date",
+        "notes_for_discussion"
+      ],
+      "description": "Reorder columns"
+    },
+    {
+      "op": "core/mass-edit",
+      "engineConfig": {
+        "facets": [],
+        "mode": "row-based"
+      },
+      "columnName": "country",
+      "expression": "value",
+      "edits": [
+        {
+          "from": [
+            "Republic of Congo (Brazzaville)"
+          ],
+          "fromBlank": false,
+          "fromError": false,
+          "to": "Republic of Congo"
+        }
+      ],
+      "description": "Mass edit cells in column country"
+    }
+  ]
