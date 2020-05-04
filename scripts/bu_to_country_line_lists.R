@@ -8,7 +8,8 @@ library(tidyverse)
 # 2. Load CSV file from above in Openrefine 3.2 and run the json script in scripts/bu-data-openrefine.json
 # 3. Export CSV file from openrefine and load here in R
 
-bu_data <- read_csv("data/tmp_data/2020-04-01-20050203-2-refine.csv") 
+bu_data <- read_csv("data/tmp_data/2020-04-01-20050203-2-refine.csv") %>% 
+  mutate(date = date_confirmation)
 
 # SEPERATING INTO COUNTRY LISTS ----
 
